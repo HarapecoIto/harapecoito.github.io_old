@@ -1,0 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+html * {
+  box-sizing: border-box;
+  font-family: $text-font;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+pre {
+  font-family: $code-font;
+}
+code {
+  font-family: $code-font;
+}
