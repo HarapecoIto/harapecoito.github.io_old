@@ -2,17 +2,12 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>{{ block "title" . }}{{ end }}</title>
+    <title>{{ if ne .Kind "home" }}{{ block "title" . }}{{ end }} – {{ end }}{{ .Site.Title }}</title>
     {{ partial "head/favicon" . }}
     {{ partial "head/styles" . }}
   </head>
-  <body>
+  <body data-kind="{{ .Kind }}">
     {{ partial "header/header" . }}
-    <ul>
-      <li><a href="{{ relURL "/" }}">トップ</a></li>
-      <li><a href="{{ relURL "/article/" }}">記事</a></li>
-    </ul>
-    <hr />
     {{ block "main" . }}{{ end }}
     {{ partial "footer/footer" . }}
   </body>

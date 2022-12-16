@@ -1,9 +1,11 @@
 {{ define "title" }}
-  {{- .Site.Title -}}
+  {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Site.Title }}</h1>
-  {{ .Content }}
+  <article data-type="{{ .Type }}">
+    {{ .Content }}
+  </article>
+  <hr/>
   <ul>
     {{ range .Site.RegularPages -}}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
