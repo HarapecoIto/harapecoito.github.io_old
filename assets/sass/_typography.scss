@@ -6,15 +6,14 @@ html * {
   font-family: $text-font;
   font-size: inherit;
   font-weight: normal;
+  color: inherit;
 }
 body {
   font-size: 1.6rem;
   color: $normal-foreground-color;
   background-color: $normal-background-color;
 }
-pre {
+pre, code {
   font-family: $code-font;
-}
-code {
-  font-family: $code-font;
+  white-space: pre;
 }

@@ -1,0 +1,5 @@
+<footer>
+  <div class="copyright">
+    {{ with $.Site.Copyright }}{{ replace . "{year}" now.Year | markdownify}}{{ end }}
+  </div>
+</footer>

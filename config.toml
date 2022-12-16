@@ -2,6 +2,9 @@ baseURL = "http://example.org/"
 languageCode = "ja-jp"
 title = 'My New Hugo Site'
 contentDir = "content"
+
+copyright = "(c) 2022-{year} Harapeco Ito"
+
 disableKinds = ["RSS", "sitemap"]
 
 [taxonomies]
