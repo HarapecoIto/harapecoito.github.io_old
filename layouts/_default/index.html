@@ -2,13 +2,15 @@
   {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <article data-type="{{ .Type }}">
-    {{ .Content }}
-  </article>
-  <hr/>
-  <ul>
-    {{ range .Site.RegularPages -}}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end -}}
-  </ul>
+  <div class="page">
+    <article data-type="{{ .Type }}">
+      {{ .Content }}
+    </article>
+    <hr/>
+    <ul>
+      {{ range .Site.RegularPages -}}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end -}}
+    </ul>
+  </div>
 {{ end }}

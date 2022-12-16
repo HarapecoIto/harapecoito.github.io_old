@@ -2,9 +2,11 @@
   {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <ul>
-    {{ range .Pages -}}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end -}}
-  </ul>
+  <div class="page">
+    <ul>
+      {{ range .Pages -}}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end -}}
+    </ul>
+  </div>
 {{ end }}

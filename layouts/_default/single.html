@@ -2,7 +2,11 @@
   {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <article data-type="{{ .Type }}">
-    {{ .Content }}
-  </article>
+  <div class="page">
+    <article data-type="{{ .Type }}">
+      {{ .Content }}
+      <hr/>
+      {{ partial "partials/author/author" . }}
+    </article>
+  </div>
 {{ end }}
