@@ -1,6 +1,7 @@
-@import 'font';
-@import 'theme';
-@import 'reset';
-@import 'typography';
+@import 'vars/vars';
 
-@import 'components/components';
+@import 'themes/ai';
+
+@import 'init/all';
+
+@import 'components/all';
