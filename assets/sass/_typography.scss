@@ -4,8 +4,13 @@ html {
 html * {
   box-sizing: border-box;
   font-family: $text-font;
-  font-size: 1.6rem;
+  font-size: inherit;
   font-weight: normal;
+}
+body {
+  font-size: 1.6rem;
+  color: $normal-foreground-color;
+  background-color: $normal-background-color;
 }
 pre {
   font-family: $code-font;
