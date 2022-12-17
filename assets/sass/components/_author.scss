@@ -14,6 +14,16 @@
     width: 100%;
     max-width: 180px;
   }
+  .twitter {
+    margin-top: 1rem;
+    svg {
+      width: 3rem !important;
+      height: 3rem !important;
+      path {
+        fill: rgb(29, 155, 240);
+      }
+    }
+  }
 }
 @include mq(tb) {
   .author {

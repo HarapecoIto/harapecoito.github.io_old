@@ -1,7 +1,14 @@
 <div class="author">
-  <div><img class="avatar" src="{{ "avatar.png" |  relURL }}" /></div>
+  <div><img class="avatar" src="{{ "avatar.png" | relURL }}" /></div>
   <div>
-    <div class="company-name">{{ .Site.Params.companyname }}</div>
-    <div class="myname">{{ .Site.Params.myname }}</div>
+    <div class="company-name">{{ .Site.Params.author.companyname }}</div>
+    <div class="myname">{{ .Site.Params.author.name }}</div>
+    {{ if .Site.Params.author.twitter }}
+      <div class="twitter">
+        <a href="{{ .Site.Params.author.twitter }}" target="_blank">
+          {{ partial "svgs/twitter" . }}
+        </a>
+      </div>
+    {{ end }}
   </div>
 </div>
