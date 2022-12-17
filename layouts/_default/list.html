@@ -2,11 +2,11 @@
   {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <div class="page">
+  <main class="page">
     <ul>
       {{ range .Pages -}}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end -}}
     </ul>
-  </div>
+  </main>
 {{ end }}

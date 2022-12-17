@@ -2,15 +2,18 @@
   {{ .Title }}
 {{ end }}
 {{ define "main" }}
-  <div class="page">
+  <main class="page">
     <article data-type="{{ .Type }}">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </article>
+    <div class="pages">
+      {{ range $page := .Site.RegularPages }}
+        <hr/>
+        {{ partial "summary/summary" $page }}
+      {{ end }}
+    </div>
     <hr/>
-    <ul>
-      {{ range .Site.RegularPages -}}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end -}}
-    </ul>
-  </div>
+    {{ partial "partials/author/author" . }}
+  </main>
 {{ end }}

@@ -1,0 +1,4 @@
+<article data-type="{{ .Type }}" data-kind="{{ .Kind }}">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  {{ .Summary | safeHTML }}
+</article>

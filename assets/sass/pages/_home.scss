@@ -1,8 +1,8 @@
-[data-kind="page"] {
+[data-kind="home"] {
   .page {
     padding: 1rem 2rem;
   }
-  article {
+  main > article {
     h1 {
       margin: 2rem 0;
       color: $primary-background-color;
@@ -19,16 +19,16 @@
         background-color: $primary-background-color;
       }
     }
-    &[data-type="blog"] h1::before {
-      content: "[Blog]";
-    }
-    &[data-type="item"] h1::before {
-      content: "[Item]";
-    }
-    h2 {
+  }
+  .pages > article {
+    h1 {
       font-size: 2.5rem;
       color: $primary-background-color;
       margin: 2rem 0;
+      &::before {
+        margin-right: .5rem;
+        font-size: 1.5rem;
+      }
       &::after {
         display: block;
         margin: -.7rem 0 1rem 0;
@@ -36,16 +36,19 @@
         height: 2px;
         background-color: $primary-background-color;
       }
+      a:hover {
+        color: $hover-color;
+      }
     }
-    p {
-      margin: 1rem 0;
+    &[data-type="blog"] {
+      h1::before {
+        content: "[Blog]";
+      }
     }
-    a:link, a:active, a:visited {
-      color: $link-color;
-    }
-    a:hover {
-      color: $hover-color;
+    &[data-type="item"] {
+      h1::before {
+        content: "[Item]";
+      }
     }
   }
 }
-

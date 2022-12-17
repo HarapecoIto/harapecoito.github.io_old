@@ -2,6 +2,7 @@ baseURL: "http://example.org/"
 languageCode: "ja-jp"
 title: 'Hugoでテーマを自作する'
 contentDir: "content"
+hasCJKLanguage: true
 
 copyright: "(c) 2022-{year} Harapeco Ito"
 
@@ -11,3 +12,10 @@ disableKinds:
 
 permalinks:
   blog: /blog/:year:month:day/:filename/
+  item: /item/:year:month:day/:filename/
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
