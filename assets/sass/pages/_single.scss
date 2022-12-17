@@ -2,4 +2,26 @@
   .page {
     padding: 2rem;
   }
+  article {
+    h1 {
+      margin-bottom: 2rem;
+      color: $primary-background-color;
+      font-size: 3rem;
+      &::before {
+        font-size: 2rem;
+        margin-right: .5rem;
+      }
+      &::after {
+        display: block;
+        margin: -.7rem 0 1rem 0;
+        content: "";
+        height: 2px;
+        background-color: $primary-background-color;
+      }
+    }
+    &[data-type="blog"] h1::before {
+      content: "[Blog]";
+    }
+  }
 }
+
