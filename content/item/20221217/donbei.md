@@ -18,11 +18,11 @@ draft: false
 ## 東西の勢力図
 日清の公式サイトに東西の境目があった。
 
-<div style="max-width: 480px">
-  {{< image src="item/20221217/donbei.jpg" alt="どん兵衛東西食べ比べ!!" href="https://www.nissin.com/jp/news/3148" target="_blank" >}}
+<div style="max-width: 720px">
+  {{< image src="item/20221217/donbei.jpg" alt="どん兵衛東西食べ比べ!!" href="https://www.nissin.com/jp/news/2699" target="_blank" >}}
 </div>
 
-\[出典\] [https://www.nissin.com/jp/news/3148](https://www.nissin.com/jp/news/3148)
+[出典] [https://www.nissin.com/jp/news/2699](https://www.nissin.com/jp/news/2699)
 
 
 ## 私の好み
