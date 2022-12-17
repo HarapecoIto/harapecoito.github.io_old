@@ -1,0 +1,13 @@
+baseURL: "http://example.org/"
+languageCode: "ja-jp"
+title: 'Hugoでテーマを自作する'
+contentDir: "content"
+
+copyright: "(c) 2022-{year} Harapeco Ito"
+
+disableKinds:
+  - "RSS"
+  - "sitemap"
+
+permalinks:
+  blog: /blog/:year:month:day/:filename/

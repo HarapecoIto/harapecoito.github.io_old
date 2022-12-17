@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ if ne .Kind "home" }}{{ block "title" . }}{{ end }} – {{ end }}{{ .Site.Title }}</title>
+    {{ partial "head/favicon" . }}
+    {{ partial "head/styles" . }}
+  </head>
+  <body data-kind="{{ .Kind }}">
+    {{ partial "header/header" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer/footer" . }}
+  </body>
+</html>
