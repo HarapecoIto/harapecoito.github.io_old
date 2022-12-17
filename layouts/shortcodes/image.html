@@ -1,0 +1,13 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $href := .Get "href" }}
+{{ $target := .Get "target" }}
+{{ $title := .Get "title"}}
+
+{{ if $src }}
+  <a href="{{ $href }}" target="{{ $target }}" title="{{ $title}}">
+    <img src="{{ $src | relURL }}" alt="{{ $alt }}"/>
+  </a>
+{{ else }}
+  <img src="{{ $src | relURL }}" alt="{{ $alt }}"/>
+{{ end }}
