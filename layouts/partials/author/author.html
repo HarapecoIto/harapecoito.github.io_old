@@ -10,5 +10,12 @@
         </a>
       </div>
     {{ end }}
+    {{ if and .Site.Params.author.tags (gt (len .Site.Params.author.tags) 0) }}
+      <ul class="tags">
+        {{ range $tag := .Site.Params.author.tags }}
+          <li>{{ $tag | safeHTML }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
   </div>
 </div>

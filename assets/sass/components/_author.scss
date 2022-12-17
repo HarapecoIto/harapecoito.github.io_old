@@ -7,7 +7,7 @@
   }
   > :last-child {
     margin: 0 auto;
-    max-width: 240px;
+    max-width: 320px;
     text-align: left;
   }
   img.avatar {
@@ -15,12 +15,34 @@
     max-width: 180px;
   }
   .twitter {
-    margin-top: 1rem;
+    margin: .5rem;
     svg {
       width: 3rem !important;
       height: 3rem !important;
       path {
         fill: rgb(29, 155, 240);
+      }
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      flex: 1 1 auto;
+      padding: 3px 8px;
+      margin: 2px;
+      text-align: left;
+      font-size: .5rem;
+      color: $normal-foreground-color;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      &::before {
+        content: "#";
+        margin-right: 3px;
+      }
+      &:hover {
+        color: $link-color;
       }
     }
   }
