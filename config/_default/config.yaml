@@ -2,6 +2,7 @@ baseURL: "http://example.org/"
 languageCode: "ja-jp"
 title: 'Hugoでテーマを自作する'
 contentDir: "content"
+hasCJKLanguage: true
 
 copyright: "(c) 2022-{year} Harapeco Ito"
 
