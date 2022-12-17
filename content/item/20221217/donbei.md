@@ -12,6 +12,8 @@ draft: false
 </div>
 <!--more-->
 パッケージの見た目ではほぼ区別できない。
+だが、よく見ると、側面に小さく「W」「E」の文字がある。
+探してみてほしい。
 
 ## 東西の勢力図
 日清の公式サイトに東西の境目があった。
@@ -20,7 +22,7 @@ draft: false
   {{< image src="item/20221217/donbei.jpg" alt="どん兵衛東西食べ比べ!!" href="https://www.nissin.com/jp/news/3148" target="_blank" >}}
 </div>
 
-\[出典:\] [https://www.nissin.com/jp/news/3148](https://www.nissin.com/jp/news/3148)
+\[出典\] [https://www.nissin.com/jp/news/3148](https://www.nissin.com/jp/news/3148)
 
 
 ## 私の好み
